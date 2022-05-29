@@ -1,11 +1,11 @@
 pragma solidity ^0.5.0;
 
 /**
-@title Flashloansforeveryone interface
+@title Flashloans interface
 @notice provides the interface to fetch the LendingPoolCore address
  */
 
-contract flashloansforeveryone {
+contract FlashloansProvider {
     function getLendingPool() public view returns (address);
 
     function setLendingPoolImpl(address _pool) public;
@@ -65,3 +65,6 @@ contract flashloansforeveryone {
     function getStakingToken() public view returns (address);
 
     function setStakingToken(address _address) public;
+        
+        
+}
